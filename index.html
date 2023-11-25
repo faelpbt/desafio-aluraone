@@ -26,22 +26,21 @@
                 ></textarea>
         
                 <div class="content-text-messege">
-
-                    <img src="./assets//icon.png" alt="icon-alert">
-
-                    <p class="content-text-alert">
-                        Apenas letras minúsculas e sem acento.
+                    <p 
+                        class="content-text-alert"
+                        id="mensagem-erro"
+                        >
                     </p>
 
                 </div>
         
                 <div class="content-text-buttons">
         
-                    <button class="button-one">
+                    <button onclick="btnCriptografar()" class="button-one">
                         Criptografar
                     </button>
         
-                    <button class="button-two">
+                    <button onclick="btnDescriptografar()" class="button-two">
                         Descriptografar
                     </button>
         
@@ -51,7 +50,7 @@
     
         </section>
     
-        <section class="content-answer">
+        <section class="content-answer" id="content-answer">
 
             <img 
                 class="content-answer-img"
@@ -68,6 +67,23 @@
                 <p class="content-answer-text">
                     Digite um texto que você deseja criptografar ou descriptografar.
                 </p>
+
+            </div>
+
+        </section>
+
+        <section class="content-response" id="content-response">
+
+            <div class="content-response-text">
+
+                <textarea 
+                    class="content-text-answer"
+                    id="input-mensagem" 
+                    cols="5" 
+                    rows="5"
+                ></textarea>
+
+                <button onclick="Copiar()" class="button-two">Copiar</button>
 
             </div>
 
